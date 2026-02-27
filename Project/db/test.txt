@@ -1,0 +1,57 @@
+
+vì sao không cần queue cho gyro_data: game logic chỉ cần giá trị gyro mới nhất, không cần lưu lịch sử, và việc dùng biến toàn cục giúp giảm overhead và latency
+nếu dùng queue, dùng cho sự kiện hất bóng nhằm tránh mất event
+
+register chỉ có 3 tín hiệu Load, In, Out (2 in 1 out)
+ghi tên tín hiệu (S_Mux) vào cho mux của xyz
+thêm N là input của LUT
+sửa tên Angle Normalization thành Angle Calibration
+thêm 1 output Done chỗ Angle Calibration
+output của Control unit là Load, E, S_Mux, CntDone còn input là N, Done
+
+goc duong:
+1 -> pi/3 = 4289 -> 	cos = 0.5 = 2048
+			sin = 0.866 = 3647
+2- > 3pi/4 = 9650 ->	cos = -0.707 = -2896
+			sin = 0.707 = 2896
+3 -> 7pi/6 = 15012 ->	cos = -0.866 = -3647
+			sin = -0.5 = -2048
+4 -> 17pi/10 = 21875 ->	cos = 0.587 = 2407
+			sin = =0.809 = -3313
+
+goc am
+4 -> -pi/3 = -4289 	cos = 0.5 = 2048
+			sin = -0.866 = -3647
+3 -> -3pi/4 = -9650 ->	cos = -0.707 = -2896
+			sin = -0.707 = -2896
+2 -> -7pi/6 = -15012 ->	cos = -0.866 = -3647
+			sin = 0.5 = 2048
+1 -> -17pi/10 =-21875 ->cos = 0.587 = 2407
+			sin = 0.809 = 3313
+
+
+FA: 5
+Fa16b: 8*5 = 40
+mux21: 4
+mux21_8b: 8*4 = 32
+mux21_16b: 32*2 = 64
+sreg: 8*4 = 32
+counter: 8
+mux41: 3*4=12
+mux81: 2*12 + 4 = 28
+mux161: 2*28 + 4 = 60
+shift_right: 16 * 60 = 960
+lut: 60
+mux41_16b: 192
+mux81_16b: 448
+mux161_16b: 960
+add/sub: 40 + 64 = 104
+cmp_16b = 105
+comparator: 336
+angle_calibration: 929
+xyz_processor: 888
+datapath: 4406
+control unit: 9
+final: 4415
+fmax: 92.53 MHz
+critical path: 0.1 ns

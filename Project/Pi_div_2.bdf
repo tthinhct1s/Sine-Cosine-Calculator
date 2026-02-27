@@ -1,0 +1,241 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(output)
+	(rect 976 424 1152 440)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Pi2[15..0]" (rect 90 0 137 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 672 304 704 336)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 21 20 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 672 264 704 280)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(connector
+	(pt 688 280)
+	(pt 736 280)
+)
+(connector
+	(pt 688 304)
+	(pt 744 304)
+)
+(connector
+	(text "Pi2[15]" (rect 784 296 818 308)(font "Arial" ))
+	(pt 744 312)
+	(pt 816 312)
+)
+(connector
+	(text "Pi2[14]" (rect 785 312 819 324)(font "Arial" ))
+	(pt 744 328)
+	(pt 816 328)
+)
+(connector
+	(text "Pi2[13]" (rect 785 328 819 340)(font "Arial" ))
+	(pt 744 344)
+	(pt 816 344)
+)
+(connector
+	(text "Pi2[12]" (rect 777 344 811 356)(font "Arial" ))
+	(pt 736 360)
+	(pt 808 360)
+)
+(connector
+	(text "Pi2[11]" (rect 785 360 819 372)(font "Arial" ))
+	(pt 736 376)
+	(pt 808 376)
+)
+(connector
+	(text "Pi2[10]" (rect 791 376 825 388)(font "Arial" ))
+	(pt 744 392)
+	(pt 816 392)
+)
+(connector
+	(text "Pi2[9]" (rect 785 392 813 404)(font "Arial" ))
+	(pt 744 408)
+	(pt 816 408)
+)
+(connector
+	(text "Pi2[8]" (rect 786 408 814 420)(font "Arial" ))
+	(pt 736 424)
+	(pt 808 424)
+)
+(connector
+	(text "Pi2[7]" (rect 792 424 820 436)(font "Arial" ))
+	(pt 744 440)
+	(pt 816 440)
+)
+(connector
+	(text "Pi2[6]" (rect 785 440 813 452)(font "Arial" ))
+	(pt 744 456)
+	(pt 816 456)
+)
+(connector
+	(text "Pi2[5]" (rect 785 456 813 468)(font "Arial" ))
+	(pt 736 472)
+	(pt 808 472)
+)
+(connector
+	(text "Pi2[3]" (rect 786 488 814 500)(font "Arial" ))
+	(pt 744 504)
+	(pt 816 504)
+)
+(connector
+	(text "Pi2[2]" (rect 792 504 820 516)(font "Arial" ))
+	(pt 744 520)
+	(pt 816 520)
+)
+(connector
+	(text "Pi2[1]" (rect 784 520 812 532)(font "Arial" ))
+	(pt 736 536)
+	(pt 808 536)
+)
+(connector
+	(text "Pi2[0]" (rect 792 536 820 548)(font "Arial" ))
+	(pt 744 552)
+	(pt 816 552)
+)
+(connector
+	(text "Pi2[4]" (rect 793 472 821 484)(font "Arial" ))
+	(pt 744 488)
+	(pt 816 488)
+)
+(connector
+	(text "Pi2[15..0]" (rect 925 416 972 428)(font "Arial" ))
+	(pt 976 432)
+	(pt 920 432)
+	(bus)
+)
+(connector
+	(pt 736 280)
+	(pt 736 360)
+)
+(connector
+	(pt 736 360)
+	(pt 736 376)
+)
+(connector
+	(pt 736 376)
+	(pt 736 424)
+)
+(connector
+	(pt 736 424)
+	(pt 736 472)
+)
+(connector
+	(pt 736 472)
+	(pt 736 536)
+)
+(connector
+	(pt 744 304)
+	(pt 744 312)
+)
+(connector
+	(pt 744 312)
+	(pt 744 328)
+)
+(connector
+	(pt 744 328)
+	(pt 744 344)
+)
+(connector
+	(pt 744 344)
+	(pt 744 392)
+)
+(connector
+	(pt 744 392)
+	(pt 744 408)
+)
+(connector
+	(pt 744 408)
+	(pt 744 440)
+)
+(connector
+	(pt 744 440)
+	(pt 744 456)
+)
+(connector
+	(pt 744 456)
+	(pt 744 488)
+)
+(connector
+	(pt 744 488)
+	(pt 744 504)
+)
+(connector
+	(pt 744 504)
+	(pt 744 520)
+)
+(connector
+	(pt 744 520)
+	(pt 744 552)
+)
+(junction (pt 736 360))
+(junction (pt 736 376))
+(junction (pt 736 424))
+(junction (pt 736 472))
+(junction (pt 744 312))
+(junction (pt 744 328))
+(junction (pt 744 344))
+(junction (pt 744 392))
+(junction (pt 744 408))
+(junction (pt 744 440))
+(junction (pt 744 456))
+(junction (pt 744 488))
+(junction (pt 744 504))
+(junction (pt 744 520))
